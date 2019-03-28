@@ -1,0 +1,30 @@
+{
+  "name": "lineBotApp",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Kentaro91011",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^6.6.0",
+    "@nuxtjs/bulma": "^1.2.1",
+    "bluebird": "^3.5.3",
+    "cross-env": "^5.2.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "node-cache": "^4.2.0",
+    "nuxt": "^2.4.0",
+    "pino": "^5.11.3",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
